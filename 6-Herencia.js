@@ -2,8 +2,8 @@ class Persona {
 
     static contadorPersonas = 0;
 
-    constructor(idPersona,nombre,apellidos,edad){
-        this._idPersona = idPersona;
+    constructor(nombre,apellidos,edad){
+        this._idPersona = ++Persona.contadorPersonas;
         this._nombre = nombre;
         this._apellidos = apellidos;
         this._edad = edad; 
