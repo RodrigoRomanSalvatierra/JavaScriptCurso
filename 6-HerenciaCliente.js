@@ -2,7 +2,8 @@
 
     static contadorCliente = 0;
 
-    constructor(fechaRegistro){
+    constructor(nombre,apellido,edad,fechaRegistro){
+        super(nombre,apellido,edad);
         this._idCliente = ++Cliente.contadorCliente;
         this._fechaRegistro = fechaRegistro;
     }
